@@ -485,6 +485,23 @@ h1, h2, h3, h4 {
     margin-bottom: 18px;
 }
 .card-foot { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; }
+/* ---------- Path chooser (cliente vs curso) ---------- */
+.path-chooser { padding-top: 0; }
+.path-card { display: flex; flex-direction: column; text-decoration: none; cursor: pointer; }
+.path-card p { flex-grow: 1; }
+.path-card-link {
+     margin-top: 22px;
+     display: inline-flex;
+     align-items: center;
+     gap: 8px;
+     color: var(--gold-light);
+     font-size: 13.5px;
+     font-weight: 600;
+     letter-spacing: 0.3px;
+}
+.path-card-link svg { width: 16px; height: 16px; transition: transform 0.25s ease; }
+.path-card:hover .path-card-link svg { transform: translateX(4px); }
+
 
 /* ---------- Tone / results swatches ---------- */
 .tone-card { text-align: left; }
